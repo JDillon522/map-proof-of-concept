@@ -1,0 +1,916 @@
+html {
+	height: 100%
+}
+body {
+	font-size: 12px;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* hide initially and only display in min-width:767px section*/
+#feedbackButton {
+	display: none;
+}
+
+.js .noscript {
+	display: none;
+}
+
+.slideOptions {
+	display: none;
+}
+.issues {
+	padding: 20px 0 10px 20px;
+	display: none;
+}
+
+
+
+.virtualTour-categoryCheckboxLabel::selection, .virtualTour-categoryCheckboxLabel span::selection {
+	background: transparent;
+}
+.virtualTour-categoryCheckboxLabel::-moz-selection, .virtualTour-categoryCheckboxLabel span::-moz-selection {
+	background: transparent;
+}
+
+.hide-text {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.virtualTour a:link {
+	text-decoration: none;
+}
+
+.virtualTour .jspVerticalBar {
+	background: #fff;
+	margin-right: 6px;
+	width: 6px;
+}
+.virtualTour .jspTrack {
+	background: #fff !important;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.virtualTour .jspDrag {
+	background: #ccc !important;
+}
+.virtualTour .jspDrag:after {
+	display: none;
+}
+#virtualTour-parkingInfo .line-item {
+	clear: both;
+}
+#virtualTour-parkingInfo .left-text, #virtualTour-parkingInfo .right-text {
+	display: block;
+	float: left;
+}
+#virtualTour-parkingInfo .left-text {
+	width: 50%;
+}
+#virtualTour-parkingInfo .right-text {
+	width: 25%;
+}
+#virtualTour-attractionContent ul, #virtualTour-attractionContent ol {
+	margin-top: 1em;
+	margin-left: 2em;
+}
+
+#virtualTour-scrollPane {
+	position: relative;
+}
+
+.flex-direction-nav li a.flex-next {
+	position: absolute;
+	right: 0;
+}
+.flexslider .flex-viewport {
+	overflow: hidden !important;
+}
+
+.logo {
+	background-image: url("../../img/logo.png");
+	background-repeat: no-repeat;
+	text-indent: -999em;
+	margin: 10px 0 0 10px;
+	width: 260px;
+	height: 58px;
+	/*clear: left;
+	float: left;*/
+	display: block;
+	position: static;
+}
+
+/** */
+
+#container {
+	overflow: visible;
+}
+.virtualTour header {
+	padding-top: 0;
+	padding-bottom: 10px;
+}
+.virtualTour h2 {
+	/*font-family: "Open Sans";*/
+	font-weight: 400;
+	text-transform: uppercase;
+	line-height: 1em;
+	padding: 0;
+	margin: 0;
+}
+.virtualTour h2 a {
+	text-decoration: none;
+}
+.virtualTour .scroll-pane {
+	clear: both;
+}
+.virtualTour .breadcrumbs {
+	text-align: center;
+	padding: 0;
+	margin: 0 0 15px 0;
+	display: none;
+}
+.virtualTour .breadcrumbs ul li {
+	font-size: 13px;
+}
+.virtualTour .breadcrumbs .bullet {
+	margin: 0;
+}
+#virtualTour-deepLink {
+	position: absolute;
+	top: 14px;
+	right: 20px;
+	width: 20px;
+	height: 20px;
+	z-index: 100;
+	display: none;
+}
+#virtualTour-deepLinkTextField {
+	width: 97%;
+}
+#virtualTour-deepLinkDialog {
+	display: none;
+}
+#virtualTour-backButton {
+	/*font-weight: bold;*/
+	font-size: 14px;
+	color: #000;
+	position: absolute;
+	top: 25px;
+	right: 18px;
+	z-index: 100;
+	display: none;
+}
+/** main column */
+#virtualTour-mainColumn {
+	/*background: #fff;*/
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+}
+#virtualTour-mainColumn .headerWrap {
+	padding-top: 20px;
+	padding-bottom: 13px;
+	padding-left: 0;
+	padding-right: 0;
+}
+#virtualTour-mainColumn .logo {
+	margin: 0 auto;
+	/*width: 247px;*/
+	position: relative;
+}
+/** main content area */
+.virtualTour .primaryContent .main {
+	padding: 0;
+	margin: 0;
+}
+.virtualTour .primaryContent .main h1 {
+	border-top: 1px solid #e1e1e1;
+	border-bottom: none;
+	-webkit-box-shadow: inset 0px 5px 7px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: inset 0px 5px 7px rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0px 5px 7px rgba(0, 0, 0, 0.1);
+	padding: 20px 18px 0 18px;
+	margin: 5px 0 5px 0;
+}
+/** */
+.virtualTour-wrapper {
+	padding-right: 18px;
+	padding-left: 18px;
+}
+/** main navigation */
+#virtualTour-mainNavigation {
+	margin: 0;
+	list-style: none;
+	display: none;
+}
+.virtualTour-mainNavigationItem {
+	margin-right: 5px;
+	float: left;
+	position: relative;
+}
+.oldie .virtualTour-mainNavigationItem {
+	border: 1px solid #e1e1e1;
+}
+.virtualTour-mainNavigationButton:link {
+	border: 1px solid rgba(189, 189, 189, 0.44);
+	text-decoration: none;
+	font-size: 15px;
+	color: #595858;
+	text-decoration: none;
+	padding: 10px 10px 0 10px;
+	height: 28px;
+	display: block;
+}
+.virtualTour-mainNavigationButton:hover {
+	-webkit-transition: background-color 0.5s;
+	transition: background-color;
+	background-color: #e8e8e8;
+	color: #98002e;
+	text-decoration: none;
+}
+.virtualTour-mainNavigationButton:link, .virtualTour-mainNavigationButton:visited {
+	color: #595858;
+	text-decoration: none;
+}
+.virtualTour-mainNavigationButton:focus {
+	text-decoration: none;
+}
+.virtualTour-mainNavigationButton:active, .virtualTour-mainNavigationButton.active {
+	background-color: #e8e8e8;
+	text-decoration: none;
+	color: #595858;
+}
+/** menu */
+#virtualTour-mainNavigationMenuButton {
+	width: 75px;
+}
+#virtualTour-mainNavigationMenuButton, #virtualTour-mainNavigationSearchButton {
+	padding-right: 0;
+}
+#virtualTour-mainNavigationMenuButton:after, #virtualTour-mainNavigationSearchButton:after {
+	border-left: 1px solid #d9d9d5;
+	font-family: 'icomoon';
+	text-align: center;
+	color: #98002e;
+	content: "\e017";
+	width: 30px;
+	height: 15px;
+	position: absolute;
+	top: 12px;
+	right: 0;
+}
+#virtualTour-mainNavigationMenuButton.active:after, #virtualTour-mainNavigationSearchButton.active:after {
+	color: #231f20;
+	content: "\e016";
+}
+/** search */
+#virtualTour-mainNavigationSearchButton {
+	width: 55px;
+}
+#virtualTour-mainNavigationSearchButton:before {
+	content: "\e005";
+	display: block;
+	float: left;
+	padding-top: 1px;
+}
+#virtualTour-mainNavigationSearchButton .staticText {
+	display: none;
+}
+/** map */
+#virtualTour-mainNavigationViewOnMapButton {
+	width: 90px;
+	text-align: center;
+	line-height: 12px;
+	padding-top: 6px;
+	height: 32px;
+}
+#virtualTour-mainNavigationViewOnMapButton .staticText {
+	display: none;
+}
+#virtualTour-mainNavigationViewOnMapButton:after {
+	content: "View on Google Map";
+}
+.virtualTour-wrapperDetail #virtualTour-search {
+	background: #fff;
+	-webkit-box-shadow: inset 0px 5px 5px rgba(50, 50, 50, 0.10);
+	-moz-box-shadow: inset 0px 5px 5px rgba(50, 50, 50, 0.10);
+	box-shadow: inset 0px 5px 5px rgba(50, 50, 50, 0.10);
+	border: 1px solid #c5c5c5;
+	padding: 10px 13px 10px 13px;
+}
+.virtualTour-wrapperDetail #virtualTour-categoryMenu {
+	padding: 0 0 10px 0;
+	margin-top: -1px;
+}
+/** * search results */
+#virtualTour-search {
+	z-index: 1000;
+}
+#virtualTour-search h2 {
+	margin-top: 20px;
+}
+#virtualTour-searchField {
+	border: 1px solid #d8d4cf;
+	-webkit-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.65);
+	-moz-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.65);
+	box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.65);
+	background-image: url(../img/searchFieldIcon.gif);
+	background-position: left 5px;
+	background-repeat: no-repeat;
+	font-style: italic;
+	-webkit-appearance: none;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px 15px 8px 30px;
+	width: 100%;
+}
+.virtualTour-searchResultsStats {
+	color: #595858;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.virtualTour-searchResults {
+	list-style: none;
+}
+.virtualTour-searchResults li {
+	border-top: 1px solid #dedede;
+	padding-top: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.virtualTour-searchResult {
+	padding-left: 10px;
+	margin-top: 10px;
+}
+.virtualTour-searchResult a {
+	/*font-family: "Open Sans";*/
+	/*font-weight: 600;*/
+	/*font-size: 15px;*/
+	text-decoration: none;
+}
+#virtualTour-searchResults {
+	display: none;
+}
+/** * category menu */
+#virtualTour-categoryMenu {
+	background: #fff;
+	z-index: 1000;
+}
+#virtualTour-categories, .virtualTour-subCategories {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#virtualTour-categories {
+	margin: 0 0 12px 0;
+}
+.virtualTour-category {
+	border: 1px solid #c3c3c3;
+	margin-bottom: 3px;
+	position: relative;
+}
+.virtualTour-categoryButton:link, .virtualTour-categoryButton:visited, .virtualTour-categoryButton:hover {
+	background: #ebebeb;
+	background-image: -moz-linear-gradient(90deg, rgb(223, 223, 223) 10%, rgb(255, 255, 255) 70%);
+	background-image: -webkit-linear-gradient(90deg, rgb(223, 223, 223) 10%, rgb(255, 255, 255) 70%);
+	background-image: -o-linear-gradient(90deg, rgb(223, 223, 223) 10%, rgb(255, 255, 255) 70%);
+	background-image: -ms-linear-gradient(90deg, rgb(223, 223, 223) 10%, rgb(255, 255, 255) 70%);
+	background-image: linear-gradient(0deg, rgb(223, 223, 223) 10%, rgb(255, 255, 255) 70%);
+	font-family: "proxima-nova", arial, verdana, sans-serif;
+	/*font-weight: 600;*/
+	font-size: 15px;
+	color: #353430;
+	line-height: 22px;
+	text-decoration: none;
+	-webkit-tap-highlight-color: none;
+	padding: 10px 40px 7px 10px;
+	margin: 0;
+    display: block;
+}
+.virtualTour-categoryButton.active, .virtualTour-categoryButton:focus {
+	border-bottom: 1px solid #c3c3c3;
+	color: #830c28;
+}
+/** chevron icon */
+.virtualTour-categoryButton:after {
+	background: #afafaf;
+	background: -moz-linear-gradient(90deg, rgb(165, 165, 165) 10%, rgb(194, 194, 194) 70%);
+	background: -webkit-linear-gradient(90deg, rgb(165, 165, 165) 10%, rgb(194, 194, 194) 70%);
+	background: -o-linear-gradient(90deg, rgb(165, 165, 165) 10%, rgb(194, 194, 194) 70%);
+	background: -ms-linear-gradient(90deg, rgb(165, 165, 165) 10%, rgb(194, 194, 194) 70%);
+	background: linear-gradient(0, rgb(165, 165, 165) 10%, rgb(194, 194, 194) 70%);
+	border-left: 1px solid #c3c3c3;
+	font-family: 'icomoon';
+	content: "\e017";
+	color: #fff;
+	text-align: center;
+	padding-top: 12px;
+	width: 40px;
+	height: 28px;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.virtualTour-categoryButton.active:after {
+	content: "\e016";
+}
+.virtualTour-categoryButton:before {
+	display: none;
+}
+/** checkbox */
+.virtualTour-categoryCheckbox, .virtualTour-categoryCheckboxLabel {
+	display: none;
+}
+/** sub categories */
+.virtualTour-subCategories {
+	background-color: #ebebeb;
+	background: rgb(255, 255, 255);
+	background: -moz-linear-gradient(90deg, rgb(223, 223, 223) 10%, rgb(255, 255, 255) 70%);
+	background: -webkit-linear-gradient(90deg, rgb(223, 223, 223) 10%, rgb(255, 255, 255) 70%);
+	background: -o-linear-gradient(90deg, rgb(223, 223, 223) 10%, rgb(255, 255, 255) 70%);
+	background: -ms-linear-gradient(90deg, rgb(223, 223, 223) 10%, rgb(255, 255, 255) 70%);
+	background: linear-gradient(0, rgb(223, 223, 223) 10%, rgb(255, 255, 255) 70%);
+	padding: 10px 10px 10px 20px;
+	display: none;
+}
+.virtualTour-subCategories.active {
+	display: block;
+}
+.virtualTour-subCategory {
+	margin-bottom: 12px;
+	position: relative;
+}
+.virtualTour-subCategory a:link {
+	text-decoration: none;
+}
+/** detail */
+.virtualTour-contentPanel {
+	/*background: #fff;*/
+	padding: 3px 0 10px 0;
+	display: none;
+	position: relative;
+	clear: both;
+}
+.virtualTour-contentPanel.active {
+	display: block;
+}
+#virtualTour-detail {
+	/*position: relative;*/
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+#virtualTour-detail h2 {
+	margin-bottom: 10px;
+}
+/** flexslider */
+.virtualTour .slideImgContainer {
+	border: 1px solid #dadada;
+	padding: 4px;
+}
+.virtualTour .slides {
+	min-height: 230px;
+}
+.virtualTour .slide {
+	/*opacity: 0.2;*/
+	min-height: 230px;
+}
+.virtualTour #virtualTour-attractionContent .slides {
+	margin: 0;
+}
+.virtualTour #virtualTour-attractionContent .flex-direction-nav {
+	margin-top: 0;
+}
+
+/** * map container */
+#virtualTour-mapColumn {
+	display: none;
+}
+
+@media only screen and (min-width: 767px) {
+
+	.issues {
+		display: block;
+	}
+
+	#feedbackButton {
+		display: block;
+		background: #98002e;
+		width:100px;
+		padding:5px 10px;
+		color:#FFFFFF;
+		text-decoration: none;
+		/*font-family: "Open Sans", "rooney-sans", Arial, Sans-serif;*/
+		position: fixed;
+		bottom:25px;
+		right:0px;
+		z-index: 1000;
+	}
+	#container {
+		overflow: hidden;
+	}
+	.virtualTour header {
+		background: #fff;
+		/*padding: 0;*/
+	}
+	.virtualTour .breadcrumbs {
+		display: block;
+	}
+	.virtualTour .breadcrumbs .bullet {
+		margin: 0 5px;
+	}
+	#virtualTour-deepLink {
+		top: 11px;
+		left: 338px;
+	}
+	#virtualTour-backButton {
+		top: 10px;
+		right: 60px;
+	}
+	#container {
+		width: 100%;
+		height: 100%;
+	}
+	#printButton {
+		overflow: hidden;
+		text-align: center;
+		color: rgb(0, 0, 0);
+		font-family: Arial, sans-serif;
+		-webkit-user-select: none;
+		font-size: 13px;
+		background-color: rgb(255, 255, 255);
+		padding: 1px 6px;
+		border: 1px solid rgb(113, 123, 135);
+		-webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px;
+		box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px;
+		min-width: 28px;
+		background-position: initial initial;
+		background-repeat: initial initial;
+		z-index: 1000;
+		position: absolute;
+		top: 5px;
+		right: 120px;
+		cursor: pointer;
+	}
+	#printButton a {
+		color: #000;
+	}
+	#printButton a:hover {
+		text-decoration: none;
+	}
+	#printButton .icon-print:before {
+		display: inline-block;
+		margin: 0 5px 0 0;
+		height: 10px;
+	}
+	/** main column */
+	#virtualTour-mainColumn {
+		background: rgb(255, 255, 255);
+		width: 385px;
+		height: 100%;
+		min-height: 100%;
+		float: left;
+		-webkit-box-shadow: 2px 0 15px rgba(50, 50, 50, 0.75);
+		-moz-box-shadow: 2px 0 15px rgba(50, 50, 50, 0.75);
+		box-shadow: 2px 0 15px rgba(50, 50, 50, 0.75);
+		z-index: 20;
+		overflow: hidden;
+		position: relative;
+	}
+	#virtualTour-mainNavigationViewOnMapButton {
+		padding-top: 14px;
+		width: auto;
+		height: 24px;
+	}
+	#virtualTour-mainNavigationViewOnMapButton:after {
+		content: "Get Directions";
+	}
+	/** main content area */
+	.virtualTour .primaryContent .main h1 {
+		background: none;
+		border-top: none;
+		border-bottom: none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		padding: 0 18px 0 18px;
+	}
+	.virtualTour-scrollShadow {
+		background-image: url(../img/bg_heading1_divider.png);
+		background-repeat: no-repeat;
+		background-position: center top;
+		border-top: none;
+		border-bottom: none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		position: absolute;
+		/*top: 125px;*/
+		top: 115px;
+		left: 0;
+		width: 100%;
+		height: 18px;
+		z-index: 2000;
+	}
+	.scroll-pane {
+		width: 100%;
+        /*height: 500px;
+        */
+        overflow-y: auto;
+        overflow-x: hidden;
+        outline: none;
+    }
+    .jspHorizontalBar {
+    	display: none !important;
+    }
+    /** flexslider */
+    .virtualTour .slide {
+    	height: auto;
+    }
+    .virtualTour .rotatorContainer {
+    	background: #f1f1f1;
+    	min-height: 171px;
+    }
+    /** * map container */
+    #virtualTour-mapColumn {
+    	background: #F5F2DF;
+    	width: auto;
+    	height: 100%;
+    	min-height: 100%;
+    	margin-left: 385px;
+    	display: block;
+    	z-index: 10;
+    	position: relative;
+    }
+    #virtualTour-mapCanvas {
+    	width: 100%;
+    	height: 100%;
+    	min-height: 100%;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    }
+    #virtualTour-mainColumn .headerWrap {
+    	padding-bottom: 0;
+    }
+    #virtualTour-mainColumn .logo {
+    	margin: 0 auto;
+    	padding: 0;
+    	position: relative;
+    	float: none;
+    }
+    .virtualTour-contentPanel {
+    	width: 340px;
+    }
+    /** * category menu */
+    .virtualTour-categoryButton:hover {
+    	background: #fff;
+    	color: #830c28;
+    	text-decoration: none;
+    }
+    .virtualTour-categoryButton.linked:after {
+    	content: none;
+    }
+    .virtualTour-categoryButton.linked.active, .virtualTour-categoryButton.linked:focus {
+    	border-bottom: none;
+    	color: #830c28;
+    }
+    /** * search */
+    .virtualTour-wrapperDetail #virtualTour-search {
+    	width: 312px;
+    }
+    /** checkbox */
+    .virtualTour-categoryButton:link {
+    	padding-left: 75px;
+    }
+    .virtualTour-categoryButton:before {
+    	-webkit-box-shadow: inset 1px 1px 13px rgba(0, 0, 0, 0.25);
+    	-moz-box-shadow: inset 1px 1px 13px rgba(0, 0, 0, 0.25);
+    	box-shadow: inset 1px 1px 13px rgba(0, 0, 0, 0.25);
+    	border-radius: 20px;
+    	font-size: 17px;
+    	text-align: center;
+    	text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+    	color: #fff;
+    	padding-top: 6px;
+    	width: 30px;
+    	height: 23px;
+    	position: absolute;
+    	top: 5px;
+    	left: 40px;
+    	display: block;
+    }
+    .virtualTour-primaryCategory.icon:before {
+    	font-size: 0.85em;
+    	text-align: center;
+    	color: #fff;
+    	border-radius: 20px;
+    	padding: 5px;
+    	margin-left: 0.25em;
+    	/*display: inline-block;*/
+    }
+    .virtualTour-dumbbell:before {
+    	background: #55c4eb;
+    }
+    .virtualTour-library2:before {
+    	background: #d2001d;
+    }
+    .virtualTour-users:before {
+    	background: #ee7318;
+    }
+    .virtualTour-food3:before {
+    	background: #07429d;
+    }
+    .virtualTour-mic3:before {
+    	background: #a3a3a3;
+    }
+    .virtualTour-lab:before {
+    	background: #b2156e;
+    }
+    .virtualTour-car:before {
+    	background: #14a99b;
+    }
+    .virtualTour-steps:before {
+    	background: #c18d61;
+    }
+    .virtualTour-camera:before {
+    	background: #fe94a2;
+    }
+    .virtualTour-tree:before {
+    	background: #aa1dbb;
+    }
+    .virtualTour-bed:before {
+    	background: #707070;
+    }
+    .virtualTour-graduation:before {
+    	background: #1d9114;
+    }
+    .virtualTour-star3:before {
+    	background: #ffd028;
+    }
+    .virtualTour-bus:before {
+    	background: #6a1c89;
+    }
+    .virtualTour-accessibility2:before {
+    	background: #018be4;
+    }
+    .virtualTour-aid:before {
+    	background: #fd338f;
+    }
+    .virtualTour-coin:before {
+    	background: #a2dc35;
+    }
+    .virtualTour-toilets_unisex:before {
+    	background: #000;
+    }
+    .virtualTour-categoryCheckboxLabel {
+    	border: 1px solid #d8d4cf;
+    	-webkit-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.65);
+    	-moz-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.65);
+    	box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.65);
+    }
+    input[type="checkbox"] + label.virtualTour-categoryCheckboxLabel {
+    	display: inline-block;
+    	width: 20px;
+    	height: 20px;
+    	position: absolute;
+    	top: 9px;
+    	left: 10px;
+    }
+    input[type="checkbox"] + label.virtualTour-categoryCheckboxLabel span {
+    	text-indent: -999px;
+    	display: block
+    }
+    input[type="checkbox"] + label.virtualTour-categoryCheckboxLabel:after {
+    	color: #585858;
+    	margin: -16px 0 0 2px;
+    	width: 19px;
+    	height: 19px;
+    	display: block;
+    }
+    input[type="checkbox"]:checked + label.virtualTour-categoryCheckboxLabel:after {
+    	font-size: 16px;
+    	content: "\e010";
+    }
+    input[type="checkbox"]:indeterminate + label.virtualTour-categoryCheckboxLabel:after {
+    	font-size: 13px;
+    	margin: -16px 0 0 4px;
+    	content: "\e004";
+    }
+    /** sub category */
+    .virtualTour-subCategory {
+    	padding-top: 3px;
+    	padding-left: 53px;
+    	margin-bottom: 8px;
+    }
+    .virtualTour-subCategory input[type="checkbox"] + label.virtualTour-categoryCheckboxLabel {
+    	top: 0px;
+    	left: 23px;
+    }
+    /** IE8 adjustments */
+    body.oldie label.virtualTour-categoryCheckboxLabel {
+    	display: none;
+    }
+    body.oldie .virtualTour-categoryCheckbox {
+    	position: absolute;
+    	top: 10px;
+    	left: 5px;
+    	display: block;
+    }
+    body.oldie .virtualTour-subCategory .virtualTour-categoryCheckbox {
+    	top: 5px;
+    	left: 20px;
+    }
+    .infoBox {
+    }
+    .infoBox .content {
+    	background: #f9f9f9;
+    	background-image: -moz-linear-gradient(90deg, rgb(223, 223, 223) 10%, rgb(249, 249, 249) 30%);
+    	background-image: -webkit-linear-gradient(90deg, rgb(223, 223, 223) 10%, rgb(249, 249, 249) 30%);
+    	background-image: -o-linear-gradient(90deg, rgb(223, 223, 223) 10%, rgb(249, 249, 249) 30%);
+    	background-image: -ms-linear-gradient(90deg, rgb(223, 223, 223) 10%, rgb(249, 249, 249) 30%);
+    	background-image: linear-gradient(0deg, rgb(223, 223, 223) 10%, rgb(249, 249, 249) 30%);
+    	border-top: 1px solid #fff;
+    	border-right: 2px solid #fff;
+    	border-bottom: 2px solid #fff;
+    	border-left: 2px solid #fff;
+    	/*font-family: "Open Sans";*/
+    	/*font-weight: 600;*/
+    	font-size: 14px;
+    	color: #97012f;
+    	box-sizing: border-box;
+    	-moz-box-sizing: border-box;
+    	-webkit-box-sizing: border-box;
+    	padding: 9px;
+    	width: 250px;
+    	min-height: 40px;
+    	position: relative;
+    	-webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.75);
+    	-moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.75);
+    	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.75);
+    }
+    .infoBox .content:after, .infoBox .content:before {
+    	right: 100%;
+    	border: solid transparent;
+    	content: " ";
+    	height: 0;
+    	width: 0;
+    	position: absolute;
+    	pointer-events: none;
+    }
+    .infoBox .content:after {
+    	border-color: rgba(249, 249, 249, 0);
+    	border-right-color: #f9f9f9;
+    	border-width: 10px;
+        /*top: 50%;
+        */
+        top: 18px;
+        margin-top: -10px;
+    }
+    .infoBox .content:before {
+    	border-color: rgba(255, 255, 255, 0);
+    	border-right-color: #fff;
+    	border-width: 13px;
+        /*top: 50%;
+        */
+        top: 18px;
+        margin-top: -13px;
+    }
+}
+
+@media print {
+	body, html {
+		width: 100%;
+        /*height: 95%;
+        */
+        height: 700px;
+        margin: 0 auto;
+    }
+    #virtualTour-mainColumn {
+    	display: none;
+    }
+    #virtualTour-mapColumn {
+    	position: relative;
+    	display: block;
+    	margin-top: 20px;
+    	width: 700px;
+    	height: 700px;
+    }
+    #virtualTour-mapCanvas {
+    	width: 100%;
+    	height: 100%;
+    }
+    #printButton {
+    	display: none;
+    }
+    .label {
+    	background: rgba(255, 255, 255, 0.75);
+    	padding: 5px;
+    	width: 120px;
+    	text-align: center;
+    }
+}
