@@ -21,6 +21,8 @@ function StreetViewBar() {
 StreetViewBar.prototype.each_image = function (images) {
   var formattedImages = this.formattedImages;
   var methods = this;
+  // Start at 1 because the default map is 0
+  var idCounter = 1;
 
   $.each(images, function(index, value) {
     var value = $(value).attr('value');
@@ -30,8 +32,11 @@ StreetViewBar.prototype.each_image = function (images) {
     formattedImages.push({
       parsedUrl: url,
       originalUrl: value,
-      qs: queryString
+      qs: queryString,
+      id: idCounter
       });
+
+    idCounter ++;
   });
 };
 
@@ -122,14 +127,21 @@ StreetViewBar.prototype.setup_list = function (container) {
   var self = this;
 
   formattedImages.forEach(function(value, index) {
-    var qs = JSON.stringify(value.qs);
-    html += self.add_image(value.parsedUrl, value.originalUrl, qs);
+    html += self.add_image(value);
   });
 
   html += '</ul>';
   container.append(html);
 };
 
-StreetViewBar.prototype.add_image = function (url, value, qs) {
-  return '<li><img class="streetViewImg" src="' + url + '" data-original-href="' + value + '" data-query-string=' + qs + '></li>';
+StreetViewBar.prototype.add_image = function (image) {
+  var qs = JSON.stringify(image.qs);
+
+  return '<li>' +
+            '<img class="streetViewImg" src="' + image.parsedUrl +
+              '" data-original-href="' + image.originalUrl +
+              '" data-id="' + image.id +
+              '" data-query-string=' + qs + '>' +
+            '</img>' +
+          '</li>';
 };
