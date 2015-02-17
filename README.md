@@ -1,16 +1,17 @@
 #Proof of concept for some fun map action.
 
 To run, clone the repo, and in the directory type `npm start`.
-Navigate to "localhost:3000/bar"
+Navigate to "localhost:3000"
 
 Relevant files:
-> HTML
+
+HTML
 > ./views/bar.hbs
 
-> Class to create the slider
+Class to create the slider
 > ./public/javascripts/mapbar.js
 
-> Class to create the map
+Class to create the map
 > ./public/javascripts/mapGen.js
 
 Concept: each slide is generated from a hidden input containing the url of a google street view.
