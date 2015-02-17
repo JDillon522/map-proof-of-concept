@@ -1,25 +1,11 @@
 @import "compass/css3";
 
 body {
+  max-height: 800px;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
-}
-
-
-.bx-wrapper .bx-pager.bx-default-pager a {
-  /* background-color: \$sunGlow; */
-
-    &.active {
-      background-color: blue;
-    }
-}
-
-
-.bx-prev,
-.bx-next {
-  color: blue;
 }

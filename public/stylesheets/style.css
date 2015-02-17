@@ -1,20 +1,12 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+  cursor: pointer;
 }
 
-.bx-wrapper .bx-pager.bx-default-pager a {
-  /* background-color: \$sunGlow; */
-}
-.bx-wrapper .bx-pager.bx-default-pager a.active {
-  background-color: blue;
-}
-
-.bx-prev,
-.bx-next {
-  color: blue;
+.map {
+  min-height: 500px;
 }
