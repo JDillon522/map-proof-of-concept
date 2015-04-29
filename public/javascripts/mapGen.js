@@ -19,7 +19,7 @@ function MapGen(params) {
 
     map = this.map = new google.maps.Map(mapContainer, mapOptions);
 
-    this.add_marker(mapOptions.center.lat, mapOptions.center.lng, firstMap);
+    // this.add_marker(mapOptions.center.lat, mapOptions.center.lng, firstMap);
     this.register_listeners();
   }
 }
