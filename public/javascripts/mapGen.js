@@ -84,10 +84,16 @@ MapGen.prototype.register_listeners = function () {
       pov: {
         heading: heading,
         pitch: pitch
-      }
+      },
+      pano: data.pano
     };
 
+
+
+
+
     var streetViewMap = new google.maps.StreetViewPanorama(mapContainer, streetOptions);
+
     $self.map.setStreetView(streetViewMap);
 
   })
