@@ -58,21 +58,20 @@ MapGen.prototype.register_listeners = function () {
 
   $('.streetViewImg').click(function() {
 
+  //   var data = $(this).data('query-string');
+  //   var id = $(this).data('id');
+  //   var latLng = $self.get_location(data);
+  //   var newLocation = new google.maps.LatLng(latLng[0], latLng[1]);
+  //   var newMapOptions = {
+  //     center: newLocation,
+  //     zoom: 17
+  //   };
 
-    var data = $(this).data('query-string');
-    var id = $(this).data('id');
-    var latLng = $self.get_location(data);
-    var newLocation = new google.maps.LatLng(latLng[0], latLng[1]);
-    var newMapOptions = {
-      center: newLocation,
-      zoom: 17
-    };
+  //   $self.map = new google.maps.Map($self.mapContainer, newMapOptions);
+  //   $self.add_marker(latLng[0], latLng[1], data);
+  // });
 
-    $self.map = new google.maps.Map($self.mapContainer, newMapOptions);
-    $self.add_marker(latLng[0], latLng[1], data);
-  });
-
-  $('body').on('click', 'a.make-street-view', function() {
+  // $('body').on('click', 'a.make-street-view', function() {
     var mapContainer = this.mapContainer = $('#map').get(0);
     var data = $(this).data('query-string');
     var heading = parseFloat(data.heading);
@@ -87,10 +86,6 @@ MapGen.prototype.register_listeners = function () {
       },
       pano: data.pano
     };
-
-
-
-
 
     var streetViewMap = new google.maps.StreetViewPanorama(mapContainer, streetOptions);
 

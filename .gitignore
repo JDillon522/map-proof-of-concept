@@ -9,6 +9,6 @@
 /bower_components
 
 # misc
-public/.sass-cache
+public/.sass-cache/*
 npm-debug.log
 testem.log

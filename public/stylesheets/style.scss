@@ -1,11 +1,19 @@
 @import "compass/css3";
+html {
+	height: 100%;
+}
 
 body {
-  max-height: 800px;
+  height: 100%;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.map {
+	height: 70%;
+	width: 100%;
 }
